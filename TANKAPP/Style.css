@@ -12,15 +12,16 @@ body {
 }
 
 .wrapper {
-margin: 0 auto ;/*центрируем блок с классом wrapper*/
-overflow: hidden;
-width: 1500px;/*ширина блока wrapper*/
+	margin: 0 auto ;/*центрируем блок с классом wrapper*/
+	overflow: hidden;
+	width: 1500px;/*ширина блока wrapper*/
 }
 
 .header {
-position:fixed;/*фиксируем блок с классом header*/
-width: 1500px;/*ширина шапки*/
-height: 90px;/*высота шапки*/
+	margin-top: 0;
+	position:fixed;/*фиксируем блок с классом header*/
+	width: 1500px;/*ширина шапки*/
+	height: 90px;/*высота шапки*/
 }
 
 .menu {
@@ -28,22 +29,37 @@ height: 90px;/*высота шапки*/
 	overflow: hidden;
 	width: 1500px;/*ширина панели меню*/
 	height: 90px;/*высота панели меню*/
-	margin-top: 5px;/*отступ сверху*/
+	margin-top: 0;/*отступ сверху*/
 	margin-left: 0; /*отступ слева*/
 	
 }
 
 .menu ul li {
-list-style:none;/*убираем маркеры*/
-float:left;/*выравнивание по левому краю*/
-padding: 0 0 0 0;
+	list-style:none;/*убираем маркеры*/
+	float:left;/*выравнивание по левому краю*/
+
 }
 .menu ul li a {
-font-family: 'Ubuntu', sans-serif;
-text-decoration:none;/*убираем подчёркивание*/
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #79818d; 
+	text-decoration:none;/*убираем подчёркивание*/
 }
 .menu ul li a:hover {
-text-decoration:none;/*добавляем подчёркивание*/
+	text-decoration:none;/*убираем подчёркивание*/
+}
+.howitworks {
+	padding: 0 30px 0 585px;/* top right bottom left*/
+}
+
+.about {
+	padding-right: 70px;
+}
+.contact {
+	padding-right: 40px;
+}
+.blog {
+	padding-right: 110px;
 }
 
 #logo {
@@ -59,4 +75,11 @@ text-decoration:none;/*добавляем подчёркивание*/
 img.logot {
 	padding-top: 0;
 	padding-left: 0;
+}
+.rectangle {
+	margin-top: 88px;
+	position:fixed;/*фиксируем блок с классом rectangle*/
+	width: 1500px;/*ширина прямоугольника*/
+	height: 840px;/*высота прямоугольника*/
+	background-color: #66abda;
 }
