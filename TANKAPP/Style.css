@@ -4,7 +4,7 @@ body {
 	background-color: #ffffff;
 	color: #9499a2;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 300px;
 	line-height: 22px;
 	margin: 0px;
@@ -13,7 +13,7 @@ body {
 
 .wrapper {
 	margin: 0 auto ;/*центрируем блок с классом wrapper*/
-	overflow: hidden;
+	overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто.*/
 	width: 1500px;/*ширина блока wrapper*/
 }
 
@@ -29,7 +29,7 @@ body {
 	overflow: hidden;
 	width: 1500px;/*ширина панели меню*/
 	height: 90px;/*высота панели меню*/
-	margin-top: 0;/*отступ сверху*/
+	margin-top: 15px;/*отступ сверху*/
 	margin-left: 0; /*отступ слева*/
 	
 }
@@ -41,7 +41,7 @@ body {
 }
 .menu ul li a {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: 1rem; /*16px*/
 	color: #79818d; 
 	text-decoration:none;/*убираем подчёркивание*/
 }
@@ -49,17 +49,17 @@ body {
 	text-decoration:none;/*убираем подчёркивание*/
 }
 .howitworks {
-	padding: 0 30px 0 585px;/* top right bottom left*/
+	margin: 0 30px 0 585px;/* top right bottom left*/
 }
 
 .about {
-	padding-right: 70px;
+	margin-right: 70px;
 }
 .contact {
-	padding-right: 40px;
+	margin-right: 40px;
 }
 .blog {
-	padding-right: 0;
+	margin-right: 0;
 }
 
 #logo {
@@ -78,8 +78,44 @@ img.logot {
 }
 .rectangle {
 	margin-top: 88px;
-	position:fixed;/*фиксируем блок с классом rectangle*/
+	position:absolute;/*фиксируем блок с классом rectangle*/
 	width: 1500px;/*ширина прямоугольника*/
 	height: 840px;/*высота прямоугольника*/
 	background-color: #66abda;
+}
+#HandWithIphone {
+	height: 1000px;
+	width: 642px;
+	margin-left: 865px;
+	margin-top: 90px;
+}
+#Clouds {
+	height: 608px;
+	width: 1300px;
+	margin-left: 120px;
+	margin-top: 127px;
+	position: absolute;
+}
+.BannerLeft {
+	margin-left: 161px;
+	margin-top: 239px;
+	width: 574px;
+	height: 345px;
+	position: absolute;
+}
+.BannerLeft span {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	margin: 0;
+	line-height: 4.5rem;
+	font-size: 3.25rem;
+}
+#substring {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 0;
+}
+#sub {
+	margin-top: 40px;
 }
