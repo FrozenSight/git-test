@@ -116,6 +116,32 @@ img.logot {
 	font-size: 1.5rem;
 	line-height: 0;
 }
-#sub {
+#subdiv {
 	margin-top: 40px;
 }
+#signdiv {
+	margin-top: 70px;
+}
+#sign {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 0;
+}
+#free {
+	
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 0;
+
+
+}
+#freediv {
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 150px;
+	width: 57px;
+  	height: 27px;	
+  	background-color: #ffce54;
+	border-radius: 5px;
+}
+
