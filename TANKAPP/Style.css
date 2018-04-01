@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 body {
 	background-color: #ffffff;
 	color: #9499a2;
@@ -81,10 +82,13 @@ img.logot {
 	position:absolute;/*фиксируем блок с классом rectangle*/
 	width: 1500px;/*ширина прямоугольника*/
 	height: 840px;/*высота прямоугольника*/
-	background-color: #66abda;
+	background: #66abda url(img/banner/Clouds.png);
+	background-position: center;
+
+
 }
 #HandWithIphone {
-	height: 1000px;
+	height: 750px;
 	width: 642px;
 	margin-left: 865px;
 	margin-top: 90px;
@@ -97,10 +101,11 @@ img.logot {
 	position: absolute;
 }
 .BannerLeft {
-	margin-left: 161px;
-	margin-top: 239px;
-	width: 574px;
-	height: 345px;
+	margin-left: 130px;
+	margin-top: 240px;
+	padding-left: 31px;
+	width: 610px;
+	height: 350px;
 	position: absolute;
 }
 .BannerLeft span {
@@ -128,20 +133,58 @@ img.logot {
 	line-height: 0;
 }
 #free {
-	
-	font-weight: lighter;
+	font-weight: bold;
 	font-size: 1.5rem;
 	line-height: 0;
-
-
 }
 #freediv {
 	position: absolute;
-	margin-top: -20px;
-	margin-left: 150px;
+	padding: 9px 10px 0 10px;
+	margin-top: -30px;
+	margin-left: 120px;
 	width: 57px;
   	height: 27px;	
   	background-color: #ffce54;
 	border-radius: 5px;
 }
+input {
+	margin-top: 35px;
+	font-size: 1.125rem;
+	color: #c7cacf;
+	width: 395px;
+	height: 54px;
+	border-radius: 5px;
+	padding-left: 30px;
+}
+button {
+	margin-top: 35px;
+	margin-left: 35px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500; /*medium*/
+	color: white;
+	width: 113px;
+	height: 54px;
+	border-radius: 5px;
+	background-color: #77c344;
+	border-color: #77c344;
+	padding: 21px 26px auto;
+}
+#partners {
+	margin-top: 930px;
+	margin-left: 0;
+}
+#partners ul li {
+	list-style:none;/*убираем маркеры*/
+	float:left;/*выравнивание по левому краю*/
 
+}
+#partners ul li a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem; /*16px*/
+	color: #79818d; 
+	text-decoration:none;/*убираем подчёркивание*/
+}
+#partners ul li a:hover {
+	text-decoration:none;/*убираем подчёркивание*/
+}
