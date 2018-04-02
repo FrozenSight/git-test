@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 body {
 	background-color: #ffffff;
 	color: #9499a2;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 300px;
 	line-height: 22px;
 	margin: 0px;
@@ -12,15 +13,16 @@ body {
 }
 
 .wrapper {
-margin: 0 auto ;/*центрируем блок с классом wrapper*/
-overflow: hidden;
-width: 1500px;/*ширина блока wrapper*/
+	margin: 0 auto ;/*центрируем блок с классом wrapper*/
+	overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто.*/
+	width: 1500px;/*ширина блока wrapper*/
 }
 
 .header {
-position:fixed;/*фиксируем блок с классом header*/
-width: 1500px;/*ширина шапки*/
-height: 90px;/*высота шапки*/
+	margin-top: 0;
+	position:fixed;/*фиксируем блок с классом header*/
+	width: 1500px;/*ширина шапки*/
+	height: 90px;/*высота шапки*/
 }
 
 .menu {
@@ -28,22 +30,37 @@ height: 90px;/*высота шапки*/
 	overflow: hidden;
 	width: 1500px;/*ширина панели меню*/
 	height: 90px;/*высота панели меню*/
-	margin-top: 5px;/*отступ сверху*/
+	margin-top: 15px;/*отступ сверху*/
 	margin-left: 0; /*отступ слева*/
 	
 }
 
 .menu ul li {
-list-style:none;/*убираем маркеры*/
-float:left;/*выравнивание по левому краю*/
-padding: 0 0 0 0;
+	list-style:none;/*убираем маркеры*/
+	float:left;/*выравнивание по левому краю*/
+
 }
 .menu ul li a {
-font-family: 'Ubuntu', sans-serif;
-text-decoration:none;/*убираем подчёркивание*/
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem; /*16px*/
+	color: #79818d; 
+	text-decoration:none;/*убираем подчёркивание*/
 }
 .menu ul li a:hover {
-text-decoration:none;/*добавляем подчёркивание*/
+	text-decoration:none;/*убираем подчёркивание*/
+}
+.howitworks {
+	margin: 0 30px 0 585px;/* top right bottom left*/
+}
+
+.about {
+	margin-right: 70px;
+}
+.contact {
+	margin-right: 40px;
+}
+.blog {
+	margin-right: 0;
 }
 
 #logo {
@@ -59,4 +76,115 @@ text-decoration:none;/*добавляем подчёркивание*/
 img.logot {
 	padding-top: 0;
 	padding-left: 0;
+}
+.rectangle {
+	margin-top: 88px;
+	position:absolute;/*фиксируем блок с классом rectangle*/
+	width: 1500px;/*ширина прямоугольника*/
+	height: 840px;/*высота прямоугольника*/
+	background: #66abda url(img/banner/Clouds.png);
+	background-position: center;
+
+
+}
+#HandWithIphone {
+	height: 750px;
+	width: 642px;
+	margin-left: 865px;
+	margin-top: 90px;
+}
+#Clouds {
+	height: 608px;
+	width: 1300px;
+	margin-left: 120px;
+	margin-top: 127px;
+	position: absolute;
+}
+.BannerLeft {
+	margin-left: 130px;
+	margin-top: 240px;
+	padding-left: 31px;
+	width: 610px;
+	height: 350px;
+	position: absolute;
+}
+.BannerLeft span {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	margin: 0;
+	line-height: 4.5rem;
+	font-size: 3.25rem;
+}
+#substring {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 0;
+}
+#subdiv {
+	margin-top: 40px;
+}
+#signdiv {
+	margin-top: 70px;
+}
+#sign {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	line-height: 0;
+}
+#free {
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 0;
+}
+#freediv {
+	position: absolute;
+	padding: 9px 10px 0 10px;
+	margin-top: -30px;
+	margin-left: 120px;
+	width: 57px;
+  	height: 27px;	
+  	background-color: #ffce54;
+	border-radius: 5px;
+}
+input {
+	margin-top: 35px;
+	font-size: 1.125rem;
+	color: #c7cacf;
+	width: 395px;
+	height: 54px;
+	border-radius: 5px;
+	padding-left: 30px;
+}
+button {
+	margin-top: 35px;
+	margin-left: 35px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500; /*medium*/
+	color: white;
+	width: 113px;
+	height: 54px;
+	border-radius: 5px;
+	background-color: #77c344;
+	border-color: #77c344;
+	padding: 21px 26px auto;
+}
+#partners {
+	margin-top: 930px;
+	margin-left: 0;
+}
+#partners ul li {
+	list-style:none;/*убираем маркеры*/
+	float:left;/*выравнивание по левому краю*/
+
+}
+#partners ul li a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem; /*16px*/
+	color: #79818d; 
+	text-decoration:none;/*убираем подчёркивание*/
+}
+#partners ul li a:hover {
+	text-decoration:none;/*убираем подчёркивание*/
 }
