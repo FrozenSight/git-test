@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head> 
     <meta charset = "utf-8">
     <title>TankAPP</title>
@@ -39,8 +39,8 @@
   						<span id="sign">Signup For</span> <div id="freediv"><span id="free">FREE</span></div>
   					</div>
   				</div>
-  				<input type="email" name="email" value="Your E-mail Adress" id="email" onclick="inpChange()">
-  				<button>SIGNUP</button>
+  				<input type="email" value="Your E-mail Adress" onfocus ="cleartext(this)" onblur = "returnText(this)"/>
+  				<button id="signupbtn">SIGNUP</button>
 	  		</div>
 	  			<!--<img src="img/banner/Clouds.png" align="Clouds" id="Clouds">-->
 	  			<img src="img/banner/Hand With Iphone.png" align="Hand With Iphone" id="HandWithIphone">
@@ -50,6 +50,7 @@
   			<ul>
   				<li><a href="https://evernote.com/intl/ru">EVERNOTE</a></li>
   			</ul>
+
   		</div> 		
   	 </div>
 
