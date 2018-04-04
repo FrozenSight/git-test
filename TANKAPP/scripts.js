@@ -1,6 +1,6 @@
 function cleartext(res)
 {
-	res.value = "";
+	res.value = "das";
 }
 function returnText(res)
 {

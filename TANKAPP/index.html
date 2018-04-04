@@ -39,8 +39,11 @@
   						<span id="sign">Signup For</span> <div id="freediv"><span id="free">FREE</span></div>
   					</div>
   				</div>
-  				<input type="email" value="Your E-mail Adress" onfocus ="cleartext(this)" onblur = "returnText(this)"/>
-  				<button id="signupbtn">SIGNUP</button>
+  				<form action="scripts/form.php" method="post" name="forma">
+                <input id="emailInp" type="email" name="email" value="Your E-mail Adress" onfocus ="cleartext(this)" onblur = "returnText(this)"/>
+                <button id="submit">SIGNUP</button>
+
+          </form>
 	  		</div>
 	  			<!--<img src="img/banner/Clouds.png" align="Clouds" id="Clouds">-->
 	  			<img src="img/banner/Hand With Iphone.png" align="Hand With Iphone" id="HandWithIphone">

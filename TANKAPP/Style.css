@@ -147,7 +147,7 @@ img.logot {
   	background-color: #ffce54;
 	border-radius: 5px;
 }
-input {
+#emailInp {
 	margin-top: 35px;
 	font-size: 1.125rem;
 	color: #c7cacf;
@@ -156,7 +156,7 @@ input {
 	border-radius: 5px;
 	padding-left: 30px;
 }
-button {
+#submit {
 	margin-top: 35px;
 	margin-left: 35px;
 	font-family: 'Ubuntu', sans-serif;

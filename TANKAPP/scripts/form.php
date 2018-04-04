@@ -1,29 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>Untitled Document</title>
 </head>
 <body>
 <?php 
 require 'connect.php';
-$first_name = trim($_REQUEST['first_name']);
-$last_name = trim($_REQUEST['last_name']);
 $email = trim($_REQUEST['email']);
-$facebook = trim($_REQUEST['facebook']);
-
-$position = true;
-if(preg_match("/^http:\/\/www.facebook.com\//", $facebook))
-{$position = false;}
-else if(preg_match("/^www.facebook.com\//", $facebook))
-{$position = false;
-$facebook = "http://" . $facebook;}
-else if($position)
-{$facebook = "http://www.facebook.com/" . $facebook;}
-
-
-$insert_sql = "INSERT INTO users (first_name, last_name, email, facebook)" .
-"VALUES('{$first_name}', '{$last_name}', '{$email}', '{$facebook}');";
+$insert_sql = "INSERT INTO users (email_addr)" ."VALUES('{$email}');";
 mysql_query($insert_sql);
 echo "<p>Новая запись вставлена в базу!</p>";
 ?>
