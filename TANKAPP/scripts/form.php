@@ -12,6 +12,8 @@ $insert_sql = "INSERT INTO users (email_addr)" ."VALUES('{$email}');";
 mysql_query($insert_sql);
 echo "<p>Новая запись вставлена в базу!</p>";
 ?>
-
+<script >
+window.setTimeout(location = "http://localhost/git-test/TANKAPP/index.html", 3000);
+</script>
 </body>
 </html>

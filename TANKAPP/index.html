@@ -4,7 +4,7 @@
     <meta charset = "utf-8">
     <title>TankAPP</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
   </head>
   <body>
   	<div class="wrapper">
@@ -40,7 +40,7 @@
   					</div>
   				</div>
   				<form action="scripts/form.php" method="post" name="forma">
-                <input id="emailInp" type="email" name="email" value="Your E-mail Adress" onfocus ="cleartext(this)" onblur = "returnText(this)"/>
+                <input id="emailInp" type="email" name="email" value="Your E-mail Adress" onfocus ="cleartext(this)" onblur="resettext(this)" />
                 <button id="submit">SIGNUP</button>
 
           </form>
