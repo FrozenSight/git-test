@@ -174,17 +174,4 @@ img.logot {
 	margin-top: 930px;
 	margin-left: 0;
 }
-#partners ul li {
-	list-style:none;/*убираем маркеры*/
-	float:left;/*выравнивание по левому краю*/
 
-}
-#partners ul li a {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1rem; /*16px*/
-	color: #79818d; 
-	text-decoration:none;/*убираем подчёркивание*/
-}
-#partners ul li a:hover {
-	text-decoration:none;/*убираем подчёркивание*/
-}
