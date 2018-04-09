@@ -6,7 +6,7 @@ body {
 	color: #9499a2;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.875rem;
-	font-weight: 300px;
+	font-weight: 300;
 	line-height: 22px;
 	margin: 0px;
 	padding: 0px;
@@ -173,5 +173,35 @@ img.logot {
 #partners {
 	margin-top: 930px;
 	margin-left: 0;
-}
+	padding-left: 0;
+	width: 1500px;
+	height: 200px;
+	background-color: #ffC;
+	padding: 0;
 
+}
+#partners ul {
+	margin: 0;
+	height: 57px;
+	padding: 60px 160px 45px 160px;
+	display: block;
+	font-size: 0;
+}
+#partners ul:before {
+	content:''; /* и */
+	height: 100%; /* вот */
+	display: inline-block; /* оно! */
+}
+#partners ul li {
+	list-style:none;/*убираем маркеры*/
+	float: left;
+	background: #ccc; /*тестовый параметр*/
+	display: inline-block;
+}
+#partners ul:before, #partners li {
+	vertical-align: middle;
+}
+.partner {
+	padding-left: 120px;
+
+}
